@@ -4,6 +4,8 @@ phases:
     commands:
       - pip install mkdocs
       - mkdocs build
+      - pip install awscli
+      - aws s3 cp site s3://nolen.jsbucket/ --recursive
 artifacts:
   files:
     - site/**/*
