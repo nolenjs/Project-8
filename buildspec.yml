@@ -1,0 +1,9 @@
+version: 0.2
+phases:
+  build:
+    commands:
+      - pip install mkdocs
+      - mkdocs build
+artifacts:
+  files:
+    - site/**/*
